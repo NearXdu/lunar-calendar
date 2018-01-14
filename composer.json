@@ -3,7 +3,6 @@
 	"description": "The Gregorian calendar to Lunar calendar",
 	"type": "library",
 	"license": "MIT",
-	"version":"0.1.1",
 	"authors": [
 		{
 			"name": "Crlt Zhang",
