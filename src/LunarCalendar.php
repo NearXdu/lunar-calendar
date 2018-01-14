@@ -150,7 +150,7 @@ class LunarCalendar
         $dayCyclical = $utils->dateDiff("{$year}-{$month}-01", '1900-01-01')->days + 10;
         $ganZhiDay = $utils->toGanZhi($dayCyclical + $day - 1);
 
-        return [
+	return json_encode([
             'lunarYear' => $lunarYear,
             'lunarMonth' => str_pad($lunarMonth, 2, '0', STR_PAD_LEFT),
             'lunarDay' => str_pad($lunarDay, 2, '0', STR_PAD_LEFT),
@@ -162,8 +162,7 @@ class LunarCalendar
             'chineseZodiac' => $utils->getChineseZodiac($lunarYear),
             'term' => $term,
             'is_leap' => $isLeap,
-        ];
-
+        ]);
     }
 
 
