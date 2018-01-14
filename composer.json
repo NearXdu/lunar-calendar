@@ -1,5 +1,5 @@
 {
-    "name": "crlt_/lunar-calendar",
+    "name": "crlt/lunar-calendar",
     "description": "The Gregorian calendar to Lunar calendar",
     "type": "library",
     "license": "MIT",
